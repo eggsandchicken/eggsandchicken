@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-image: url('images/banner.jpg'); /* Replace with a beautiful image of eggs and chicken */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0; /* Adjust padding for a taller banner */
+    text-align: center; /* Center-align text */
+    position: relative; /* Positioning for overlay */
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+header h1 {
+    font-size: 3rem; /* Larger font size for title */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between title and subtitle */
+}
+
+header p {
+    font-size: 1.5rem; /* Subtitle size */
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+#cart {
+    margin-top: 30px;
+}
+
+#whatsappOrder {
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#whatsappOrder:hover {
+    background-color: #1EBE56;
+}
+
+footer {
+    background-color: #333;
+    color: #ddd;
+}
